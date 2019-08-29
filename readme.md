@@ -52,14 +52,25 @@ Here's a quick 1 minute video on how to accomplish this:
 
 ### 2. Download this repo to the device
 
+From within your SSH session to the Raspberry Pi, download a zip of this repository to the current directory:
 ```bash
-wget PATH_TO_REPO
+wget https://github.com/RoyCodes/Water-Level-Detector/archive/master.zip
+```
+Then unzip master.zip. You should now have a folder called "Water-Level-Detector-Master" which includes all of the Python scripts in this repository.
+```bash
+unzip master.zip
+```
+
+Finally we'll clean up by deleting the .zip file, as we've already extracted the contents:
+```bash
+rm master.zip
 ```
 
 ## Usage
 
 ### Run the script
 
+From within the "Water-Level-Detector-Master" folder:
 ```bash
 python ultrasonic_beam.py 60
 ```
